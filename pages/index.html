@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/static/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
-    <title>Loading...</title>
+    <link rel="stylesheet" href="/assets/static/styles/index.css">
+    <title>Mi primer añito - Evangelina</title>
 </head>
 <body>
-    <div>
-        <main className='hero'>
-            <div className='promo'>
+    <div id="container">
+        <main class='hero'>
+            <div class='promo'>
                 <h1>
                     EVANGELINA
                 </h1>
-                {/* <button type='button'>Confirma tu presencia</button> */}
             </div>
             <video muted autoPlay loop>
-                <source src={video} type='video/mp4'>
+                <source src='/assets/static/video/love_balloon(540p).mp4' type='video/mp4'>
                 </source>
             </video>
-            <div className='capa'></div>
+            <div class='capa'></div>
         </main>
     </div>
+    <script type="module" src="/js/index.js"></script>
 </body>
 </html>
