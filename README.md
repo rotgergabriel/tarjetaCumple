@@ -6,7 +6,7 @@ Este proyecto utiliza las tecnologías HTML, CSS y JavaScript para crear una pá
 - JavaScript se utiliza para añadir funcionalidad interactiva a la página web.
 
 #Frameworks
-- (Pendientes)
+- Materialize.css
 
 #Herramientas
 - normalize.css
