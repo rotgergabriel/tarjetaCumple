@@ -18,11 +18,11 @@
 
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 85px;
-    background: linear-gradient(pink, red);
+    font-size: 75px;
+    background: linear-gradient(rgb(250, 150, 167), rgb(255, 0, 0));
     -webkit-background-clip: text;
     color: transparent;
-    margin-top: 40vh;
+    margin-top: 45vh;
 }
 
 video {
@@ -45,6 +45,7 @@ video {
     mix-blend-mode: overlay;
 }
 
+/* For mobile screens */
 @media(min-width:450px) and (max-width:650px) {
     h1 {
         font-size: 60px;

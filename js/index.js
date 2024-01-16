@@ -3,6 +3,6 @@ setTimeout(() => {
 
     // Redireccionar a home.html después de 2 segundos (duración de la transición)
     setTimeout(() => {
-        window.location.href = "/pages/home.html";
-    }, 2000);
-}, 5000); // Espera inicial de 5 segundos
+        window.location.href = "/pages/loader.html";
+    }, 1000);
+}, 4000); // Espera inicial de 5 segundos

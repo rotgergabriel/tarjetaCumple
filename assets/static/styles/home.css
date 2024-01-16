@@ -3,3 +3,112 @@
     margin: 0 auto;
     opacity: 5;
 }
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 1;
+    /* Makes the image visible*/
+}
+
+/*Carousel indicators*/
+.carousel-indicators {
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.carousel-indicator.active {
+    background-color: #e96f94ab;
+    border: 1px solid #e96f94ab;
+}
+
+/* Position the player in the top right corner */
+#music-player {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    /* Ensure it stays on top of other elements */
+}
+
+/* Style the audio player and button */
+#player {
+    width: 200px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#play-pause-button {
+/* Cambiar el tamaño del botón */
+    width: 4rem;
+    height: 4rem;
+    background-color: #E96F94AB;
+    /* Rosa */
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    /* Agregar esta regla */
+    border: 2px solid #E96F94AB;
+    animation: color-change 1s linear infinite;
+}
+
+@keyframes color-change {
+    0% {
+        border-color: #E96F94AB;
+    }
+
+    25% {
+        border-color: #FF98BDAB;
+    }
+
+    50% {
+        border-color: #FFEABFAB;
+    }
+
+    75% {
+        border-color: #D56086AB;
+    }
+
+    100% {
+        border-color: #E96F94AB;
+    }
+}
+
+/* For mobile screens */
+@media(min-width:320px) and (max-width:650px) {
+    #container {
+        width: 100%;
+    }
+}
