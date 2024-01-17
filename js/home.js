@@ -53,6 +53,8 @@ const updateIndicators = () => {
 
             updateIndicators(); 
 
+// Media player
+
 const audioPlayer = document.getElementById('player');
 const playPauseButton = document.getElementById('play-pause-button');
 
@@ -67,3 +69,30 @@ playPauseButton.addEventListener('click', () => {
         playPauseButton.classList.add('paused');
     }
 });
+
+// countdown 
+
+const targetDate = new Date("2024-02-11").getTime(); // Set target date
+const countdownElement = document.getElementById("countdown");
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownElement.querySelector("#days").textContent = days;
+    countdownElement.querySelector("#hours").textContent = hours;
+    countdownElement.querySelector("#minutes").textContent = minutes;
+    countdownElement.querySelector("#seconds").textContent = seconds;
+
+    if (distance < 0) {
+        clearInterval(countdownInterval);
+        countdownElement.textContent = "¡Ya es hora de la fiesta!";
+    }
+}
+
+const countdownInterval = setInterval(updateCountdown, 1000);

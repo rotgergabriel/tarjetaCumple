@@ -5,4 +5,4 @@ setTimeout(() => {
     setTimeout(() => {
         window.location.href = "/pages/loader.html";
     }, 1000);
-}, 4000); // Espera inicial de 5 segundos
+}, 3000); // Espera inicial de 5 segundos

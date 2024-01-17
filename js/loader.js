@@ -5,7 +5,4 @@ setTimeout(() => {
     setTimeout(() => {
         window.location.href = "/pages/home.html";
     }, 1000);
-}, 4000); // Espera inicial de 5 segundos
-
-const audioPlayer = document.getElementById('player');
-const playPauseButton = document.getElementById('play-pause-button');
+}, 3000); // Espera inicial de 5 segundos

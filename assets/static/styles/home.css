@@ -1,7 +1,28 @@
 #container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     opacity: 5;
+}
+
+#countdown {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    /* Ensure it stays on top of other elements */
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #E96F94AB;
+    /* Match the other accent color */
+}
+
+#countdown div {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    border: 2px solid #E96F94AB;
+    border-radius: 5px;
 }
 
 .carousel {
@@ -49,6 +70,10 @@
 .carousel-indicator.active {
     background-color: #e96f94ab;
     border: 1px solid #e96f94ab;
+}
+
+.color-link a {
+    color: #FF007F;
 }
 
 /* Position the player in the top right corner */
