@@ -58,7 +58,15 @@ const updateIndicators = () => {
 const audioPlayer = document.getElementById('player');
 const playPauseButton = document.getElementById('play-pause-button');
 
-playPauseButton.addEventListener('click', () => {
+// Iniciar la reproducción después de un segundo
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        audioPlayer.play();
+    }, 1000); // Retraso de 1 segundo
+    });
+
+    // Control de reproducción/pausa
+    playPauseButton.addEventListener('click', () => {
     if (audioPlayer.paused) {
         audioPlayer.play();
         playPauseButton.textContent = 'Pause';

@@ -25,6 +25,18 @@
     border-radius: 5px;
 }
 
+.parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Adjust the color as needed for visibility */
+    font-size: 3rem;
+    /* Adjust the font size as desired */
+    text-align: center;
+}
+
 .carousel {
     position: relative;
     width: 80%;
@@ -135,5 +147,9 @@
 @media(min-width:320px) and (max-width:650px) {
     #container {
         width: 100%;
+    }
+
+    .parallax-text {
+        font-size: 2rem;
     }
 }
