@@ -6,6 +6,10 @@
     <link rel="icon" href="/assets/static/img/favicon.ico" />
     <link rel="stylesheet" href="/assets/static/styles/home.css">
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <!-- Materialize.css min -->
     <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css">
     <!-- Materialize.js min  -->
@@ -16,21 +20,25 @@
     <div>
         <!-- Media player -->
         <div id="music-player" class="top-right">
-            <audio id="player" autoplay>
+            <audio id="player">
                 <source src="../assets/static/music/Ma-Belle-Evangeline.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
             <button id="play-pause-button">Pause</button>
         </div>
         <!-- countdown  -->
-        <div id="countdown" class="fixed-bottom-right">
-            <p>Cuenta regresiva</p>
-            <div id="days"></div>
-            <div id="hours"></div>
-            <div id="minutes"></div>
-            <div id="seconds"></div>
+        <div id="countdown" class="fixed-bottom-left">
+            <div class="countdown-container">
+                <img src="/assets/static/img/nubes/nube-boton-2.png" alt="Fondo de nubes" class="cloud-background">
+                <div class="countdown-content">
+                    <p>Cuenta regresiva</p>
+                    <div id="days"></div>
+                    <div id="hours"></div>
+                    <div id="minutes"></div>
+                    <div id="seconds"></div>
+                </div>
+            </div>
         </div>
-
         <div class="carousel">
             <!--using font awesome for arrows-->
             <i class="prev fa-solid fa-arrow-left"></i>
@@ -44,8 +52,8 @@
         <!-- Parallax text-->
         <div class="section white">
             <div class="row container">
-                <h2 class="header center">Queridos familiares y amigos</h2>
-                <h4 class="grey-text center text-darken-3 lighten-3">Los invito a celebrar mi primer cumpleaños !!!
+                <h1 class="header center">Queridos familiares y amigos</h1>
+                <h4 class="center text-darken-3 lighten-3">Los invito a celebrar mi primer cumpleaños !!!
                 </h4>
             </div>
         </div>
@@ -56,7 +64,7 @@
         <!-- Parallax text-->
         <div class="section white">
             <div class="row container">
-                <h4 class="grey-text center text-darken-3 lighten-3">Será una fiesta llena de alegría, música, juegos y diversión.
+                <h4 class="center text-darken-3 lighten-3">Será una fiesta llena de alegría, música, juegos y diversión.
                     Espero que puedan estar presentes para compartir este momento tan especial para mí.
                 </h4>
             </div>
@@ -69,8 +77,8 @@
         <div class="section white">
             <div class="row container">
                 <h2 class="header center">Lugar del evento</h2>
-                <h4 class="grey-text center text-darken-3 lighten-3">
-                    La fiesta se realizará el domingo 11 de febrero desde las 13:00hs hasta las 17:00hs, en el Salón de Fiestas
+                <h4 class="center text-darken-3 lighten-3">
+                    La fiesta se realizará el domingo 11 de febrero de 13:00hs a 17:00hs, en el Salón de Fiestas
                     "El Angel"
                 </h4>
             </div>
@@ -87,7 +95,7 @@
         <!-- Parallax text-->
         <div class="section white">
             <div class="row container">
-                <h2 class="header center">Por favor confirma tu presencia aquí</h2>
+                <h2 class="header center">Por favor confirma tu presencia</h2>
             </div>
         </div>
         <!-- Parallax img-->
@@ -97,7 +105,7 @@
                 <h3 class="header center color-link">
                     <a target="_blank"
                         href="https://docs.google.com/forms/d/e/1FAIpQLScCyZags9eHzDdxqpaDxv0TTcvk5Bv-6G3u0EB32OM36O9n3Q/viewform?usp=sf_link">Ingresá
-                        al formulario
+                        aquí
                     </a>
                 </h3>
             </div>
