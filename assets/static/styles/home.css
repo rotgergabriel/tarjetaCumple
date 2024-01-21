@@ -26,7 +26,7 @@ h2 {
     text-align: center;
     font-family: sans-serif;
     font-weight: bold;
-    color: #E96F94AB;
+    color: #e96f94ab;
     overflow: hidden;
     /* Ocultar desbordamiento de la imagen */
 }
@@ -113,7 +113,7 @@ h2 {
 }
 
 .color-link a {
-    color: #e96f94ab;
+    color: #FF007F;
 }
 
 /* Position the player in the top right corner */
