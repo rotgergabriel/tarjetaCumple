@@ -2,30 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/static/img/favicon.ico" />
+    <link rel="icon" href="/assets/static/img/favicon.ico" />   
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/assets/static/styles/index.css">
-    <title>Mi primer añito - Evangelina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/static/styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
 </head>
 <body>
-    <div id="container">
-        <main class='hero'>
-            <div class='promo'>
-                <h1>
-                    EVANGELINA
-                </h1>
-            </div>
-            <video muted autoPlay loop>
-                <source src='/assets/static/video/love_balloon(540p).mp4' type='video/mp4'>
-                </source>
-            </video>
-            <div class='capa'></div>
-        </main>
+<canvas></canvas>
+<!-- Name Evangelina -->
+<!-- <div class="text-container">
+    <div class="loading">
+        <div class="loading__letter">E</div>
+        <div class="loading__letter">V</div>
+        <div class="loading__letter">A</div>
+        <div class="loading__letter">N</div>
+        <div class="loading__letter">G</div>
+        <div class="loading__letter">E</div>
+        <div class="loading__letter">L</div>
+        <div class="loading__letter">I</div>
+        <div class="loading__letter">N</div>
+        <div class="loading__letter">A</div>
     </div>
+</div> -->
+<div id="container" class="loader">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="bar4"></div>
+    <div class="bar5"></div>
+    <div class="bar6"></div>
+</div>
     <script type="module" src="/js/index.js"></script>
+    <script type="module" src="/js/petals.js"></script>
 </body>
 </html>

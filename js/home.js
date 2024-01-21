@@ -60,10 +60,11 @@ const playPauseButton = document.getElementById('play-pause-button');
 
 // Iniciar la reproducción después de un segundo
 window.addEventListener('load', () => {
-    setTimeout(() => {
-        audioPlayer.play();
-    }, 1000); // Retraso de 1 segundo
-    });
+    // setTimeout(() => {
+    //     audioPlayer.play();
+    // }, 1000); // Retraso de 1 segundo
+    }
+    );
 
     // Control de reproducción/pausa
     playPauseButton.addEventListener('click', () => {

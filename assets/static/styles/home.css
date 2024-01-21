@@ -13,7 +13,7 @@ h2 {
 
 #container {
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
     opacity: 5;
 }
 
