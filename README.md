@@ -1,34 +1,79 @@
-#Web-invitation-card
+[![Tamaño del repositorio](https://img.shields.io/github/repo-size/rotgergabriel/tarjetaCumple.svg)](https://github.com/rotgergabriel/tarjetaCumple)
+[![Contribuidores](https://img.shields.io/github/contributors/rotgergabriel/tarjetaCumple.svg)](https://github.com/rotgergabriel/tarjetaCumple/graphs/contributors)
+[![Último commit](https://img.shields.io/github/last-commit/rotgergabriel/tarjetaCumple.svg)](https://github.com/rotgergabriel/tarjetaCumple/commits/main)
 
-Este proyecto utiliza las tecnologías HTML, CSS y JavaScript para crear una página web simple.
-- HTML se utiliza para definir la estructura de la página web.
-- CSS se utiliza para definir la apariencia de la página web.
-- JavaScript se utiliza para añadir funcionalidad interactiva a la página web.
+## 🎉 Tarjeta de Invitación Web 
 
-#Frameworks
-- Materialize.css
+### Tecnologías utilizadas ️
 
-#Herramientas
-- normalize.css
+* **HTML**
+* **CSS**
+* **JavaScript**
 
-#Fuentes
-- Google fonts: https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap
+### Frameworks 
 
-#Requisitos
-- Node.js
-- NPM
+* **Materialize.css:** Simplifica el desarrollo de componentes web.
 
-#Clona el repositorio:
+### Herramientas 
+
+* **normalize.css:** Garantiza una representación consistente en diferentes navegadores.
+
+### Fuentes 
+
+* **Google Fonts: Dancing Script:** Aporta un estilo elegante y manuscrito. (Enlace a la fuente: [https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap](https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap))
+
+### Requisitos 
+
+* **Node.js:** Entorno de ejecución para JavaScript.
+* **NPM:** Gestor de paquetes para Node.js.
+
+### Instrucciones de uso 
+
+1. **Clonar el repositorio:**
+
+```bash
 git clone git@github.com:rotgergabriel/tarjetaCumple.git
-- Instala las dependencias:
+```
+
+2. **Instalar dependencias:**
+
+```bash
 npm install
+```
 
-#Ejecución
-- Inicia el servidor de desarrollo:
+3. **Ejecutar la aplicación:**
+
+```bash
 npm start
+```
 
-Abre el navegador en http://localhost:3000: http://localhost:3000
+4. **Abrir en el navegador:**
 
-#Contribuciones
+Visita http://localhost:3000 para ver la tarjeta de invitación.
 
-Las contribuciones son bienvenidas !!!
+### Contribuciones 
+
+¡Se agradecen las contribuciones! Sigue estos pasos para colaborar:
+
+1. Forkea el repositorio.
+2. Crea una rama para tu nueva característica o corrección.
+3. Implementa tus cambios.
+4. Envía tu cambio a la rama principal y crea una solicitud de extracción.
+5. Espera a que tu solicitud sea revisada y fusionada.
+
+### Licencia 
+
+Este proyecto está bajo la licencia MIT.
+
+### Recursos adicionales 
+
+* HTML: [https://www.w3schools.com/html/](https://www.w3schools.com/html/)
+* CSS: [https://www.w3schools.com/css/](https://www.w3schools.com/css/)
+* JavaScript: [https://www.w3schools.com/js/](https://www.w3schools.com/js/)
+* Materialize.css: [https://materializecss.com/](https://materializecss.com/)
+* normalize.css: [https://github.com/topics/normalize-css](https://github.com/topics/normalize-css)
+* Google Fonts: [https://fonts.google.com/](https://fonts.google.com/)
+
+### Contacto 
+
+Si tienes dudas o sugerencias, contacta al autor del proyecto a través de GitHub.
