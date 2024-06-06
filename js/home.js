@@ -81,7 +81,7 @@ window.addEventListener('load', () => {
 
 // countdown 
 
-const targetDate = new Date("2024-02-11").getTime(); // Set target date
+const targetDate = new Date("2025-02-07").getTime(); // Set target date
 const countdownElement = document.getElementById("countdown");
 
 function updateCountdown() {
