@@ -1,4 +1,5 @@
-body, h4 {
+body,
+h4 {
     font-family: 'Dancing Script', cursive;
     color: grey;
 }
@@ -22,7 +23,7 @@ h2 {
     bottom: 5px;
     left: 0;
     /* Colocado a la izquierda */
-    z-index: 999;
+    z-index: 50;
     text-align: center;
     font-family: sans-serif;
     font-weight: bold;
@@ -53,6 +54,21 @@ h2 {
     padding: 0;
 }
 
+#fixed--menu {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: white;
+}
+
+.brand-logo {
+    margin-left: 10px;
+}
+
+.font-large {
+    font-size: 20px;
+}
+
 .parallax-text {
     position: absolute;
     top: 50%;
@@ -73,11 +89,11 @@ h2 {
 
 .carousel img {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100%;
     height: 100vh;
-    object-fit:cover;
+    object-fit: cover;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
@@ -119,9 +135,9 @@ h2 {
 /* Position the player in the top right corner */
 #music-player {
     position: fixed;
-    top: -15px;
+    top: 40px;
     right: -105px;
-    z-index: 999;
+    z-index: 50;
     width: 15rem;
     height: 7rem;
     background-image: url("/assets/static/img/nubes/nube-boton-2.png");
@@ -137,7 +153,7 @@ h2 {
 }
 
 #play-pause-button {
-/* Cambiar el tamaño del botón */
+    /* Cambiar el tamaño del botón */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,7 +164,7 @@ h2 {
     background: none;
 
     /* Agregar esta regla */
-    color:#FF007F;
+    color: #FF007F;
     animation: color-change 1.5s linear infinite;
 }
 
@@ -180,7 +196,11 @@ h2 {
         width: 100%;
     }
 
+    .brand-logo {
+        margin-left: 0px;
+    }
+
     .parallax-text {
         font-size: 2rem;
     }
-} 
+}

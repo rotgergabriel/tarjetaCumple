@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize.css min -->
     <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css">
     <!-- Materialize.js min  -->
     <script src="/assets/materialize/js/materialize.min.js"></script>
     <title>Mi primer añito - Evangelina</title>
 </head>
+
 <body id="container">
+    <!-- Navbar -->
+    <nav id="fixed--menu">
+        <div class="nav-wrapper">
+            <span class="brand-logo pink-text">Evangelina !</span>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons pink-text">menu</i></a>
+            <ul class="right hide-on-med-and-down header__links">
+                <li><a class="grey-text font-large" href="#confirmAssistance">Confirmar presencia</a></li>
+                <li><a class="grey-text font-large" href="#eventLocation">Lugar del evento</a></li>
+                <li><a class="grey-text font-large" href="https://photos.app.goo.gl/AFxbC1VD16Hbfepr9">Google fotos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidenav -->
+    <ul id="slide-out" class="sidenav sidenav-close header__links">
+        <li>
+            <div class="user-view">
+                <a href="#!" class="sidenav-close right"><i class="material-icons">close</i></a>
+                <a href="#user"><img class="circle" src="../assets/static/img/evangelina/evan11.jpeg"></a>
+                <a href="#name"><span class="pink-text name">Evangelina</span></a>
+            </div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="grey-text font-large" href="#confirmAssistance"> - Confirmar presencia</a></li>
+        <li><a class="grey-text font-large" href="#eventLocation"> - Lugar del evento</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader blue-text">¡ Ingresa y compartí tus fotos del evento !</a></li>
+        <li><a class="waves-effect pink-text font-large" href="https://photos.app.goo.gl/AFxbC1VD16Hbfepr9"> - Google fotos</a></li>
+    </ul>
+
+
     <div>
         <!-- Media player -->
         <div id="music-player" class="top-right">
@@ -78,26 +116,7 @@
             <div class="parallax evangelina"><img src="/assets/static/img/globo/landscape-1954307_1280.png"></div>
         </div>
         <!-- Parallax text-->
-        <div class="section white">
-            <div class="row container">
-                <h2 class="header center">Lugar del evento</h2>
-                <h4 class="center text-darken-3 lighten-3">
-                    La fiesta se realizará el domingo 11 de febrero, de 12:45 hs a 17:00 hs, en el Salón de Fiestas 
-                    "El Ángel". Ingresa al link de abajo para ver la ubicación.
-                </h4>
-            </div>
-        </div>
-        <!-- Parallax img-->
-        <div class="parallax-container">
-            <div class="parallax"><img src="/assets/static/img/nubes/v1015-104a.jpg"></div>
-            <div class="parallax-text">
-                <h3 class="header center color-link">
-                    <a target="_blank" href="https://maps.app.goo.gl/K8awj381gLsyePVU6">Ver ubicación aquí</a>
-                </h3>
-            </div>
-        </div>
-        <!-- Parallax text-->
-        <div class="section white">
+        <div class="section white" id="confirmAssistance">
             <div class="row container">
                 <h2 class="header center">Por favor, confirma tu presencia.</h2>
             </div>
@@ -108,9 +127,28 @@
             <div class="parallax-text">
                 <h3 class="header center color-link">
                     <a target="_blank"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScCyZags9eHzDdxqpaDxv0TTcvk5Bv-6G3u0EB32OM36O9n3Q/viewform?usp=sf_link">Ingresá
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSd9Lq7JBgyp1-o4-6CZmTrpJpf7SVjibHiHxH1oui63_WVGTg/viewform?usp=sf_link">Ingresá
                         aquí
                     </a>
+                </h3>
+            </div>
+        </div>
+        <!-- Parallax text-->
+        <div class="section white" id="eventLocation">
+            <div class="row container">
+                <h2 class="header center">Lugar del evento</h2>
+                <h4 class="center text-darken-3 lighten-3">
+                    La fiesta se realizará el domingo 11 de febrero, de 12:45 hs a 17:00 hs, en el Salón de Fiestas
+                    "El Ángel". Ingresa al link de abajo para ver la ubicación.
+                </h4>
+            </div>
+        </div>
+        <!-- Parallax img-->
+        <div class="parallax-container">
+            <div class="parallax"><img src="/assets/static/img/nubes/v1015-104a.jpg"></div>
+            <div class="parallax-text">
+                <h3 class="header center color-link">
+                    <a target="_blank" href="https://maps.app.goo.gl/K8awj381gLsyePVU6">Ver ubicación aquí</a>
                 </h3>
             </div>
         </div>
@@ -136,6 +174,8 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="/js/home.js"></script>
+    <script type="module" src="/js/home.js" defer></script>
+    <script type="module" src="/js/scroll-behavior-controller.js"></script>
 </body>
+
 </html>
